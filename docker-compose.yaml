@@ -1,0 +1,20 @@
+version: "3.8"
+
+volumes:
+
+  db_volume:
+    name: "reminder_db_volume"
+
+services:
+
+  db:
+    image: postgres:14.5
+    restart: unless-stopped
+    container_name: reminder_db
+    environment:
+      - POSTGRES_PASSWORD=123
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_volume:/var/lib/postgresql/data
+
