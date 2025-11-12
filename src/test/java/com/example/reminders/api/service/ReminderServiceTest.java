@@ -8,7 +8,6 @@ import com.example.reminders.api.dto.ReminderReadDto;
 import com.example.reminders.api.repository.ReminderRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.ArgumentMatcher;
 import org.mockito.ArgumentMatchers;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
