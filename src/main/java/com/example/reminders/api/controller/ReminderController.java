@@ -1,6 +1,5 @@
 package com.example.reminders.api.controller;
 
-import com.example.reminders.api.convert.LocalConverter;
 import com.example.reminders.api.dto.ReminderCreateDto;
 import com.example.reminders.api.dto.ReminderReadDto;
 import com.example.reminders.api.dto.ReminderUpdateDto;
@@ -9,11 +8,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
-import java.time.ZoneId;
 import java.util.List;
-import java.util.TimeZone;
 
-@CrossOrigin(origins = "http://localhost:3000")
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("reminders")

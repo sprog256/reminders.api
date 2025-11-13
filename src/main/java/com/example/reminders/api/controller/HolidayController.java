@@ -1,9 +1,7 @@
 package com.example.reminders.api.controller;
 
 import com.example.reminders.api.data.Holiday;
-import com.example.reminders.api.data.Reminder;
 import com.example.reminders.api.dto.HolidayReadDto;
-import com.example.reminders.api.dto.ReminderReadDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.core.convert.ConversionService;
@@ -14,7 +12,6 @@ import org.springframework.web.client.RestClient;
 import java.util.List;
 import java.util.Objects;
 
-@CrossOrigin(origins = "http://localhost:3000")
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("holidays")
